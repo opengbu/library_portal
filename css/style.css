@@ -1,0 +1,875 @@
+/*  Resets =======================================*/
+
+    * {
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+          -ms-text-size-adjust: 100%;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
+    body {
+      font-size: 100%;
+      margin: 0;
+      background-color: #FFF;
+    }
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+      display: block;
+    }
+
+    img {
+      border: 0;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+
+/*  Typography =====================================*/
+
+    @font-face{ 
+        font-weight: normal;
+        font-style: normal;
+        font-family: 'Neographik';
+        src: url('../fonts/neographikmtstd-webfont.woff')
+    }
+
+    body {
+        font-family: 'roboto', sans-serif, arial;
+        color: #444;
+        font-weight: 300;
+    }
+
+    h1 {
+        font-family: 'Neographik', Sans-serif, Arial;
+        text-transform: uppercase;
+        font-size: 2.75em;
+        font-weight: 600;
+        color: #333;
+        line-height: 1.9;
+        text-rendering: optimizeLegibility;
+    }
+
+    h2 {
+        font-family: 'roboto condensed', sans-serif, arial;
+        font-size: 1.75em;
+        font-weight: 300;
+        margin: 0;
+        line-height: 1.5;
+        text-rendering: optimizeLegibility;
+        color: #333;
+    }
+        .recent-item h2.due-date{
+            color: #FFF;
+            font-size: 1.15em;
+        }
+        .recent-item h2.due-date.false-head{
+            font-size: 2.1em;
+        }
+
+    h3{
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    a{
+        color: #00a88e;
+        text-decoration: none;
+    }
+        a:visited{
+            color: #00a88e;
+        }
+        a:hover{
+            color: #009880;
+        }
+        a:focus{
+            color: #00a88e;
+            outline: none;
+        }
+
+
+    nav a{
+        font-family: 'roboto', sans-serif, arial;
+        color: #888;
+        font-size: .75em;
+        font-weight: 300;
+    }
+    nav a:visited{
+        color: #888;
+    }
+    nav a:hover{
+        color: #00a88e;
+    }
+        nav li.first a{
+            padding-left: 0;
+        }
+
+    #browse-menu .list-head{
+        color: #EEE;
+        font-size: 2em;
+    }
+        #browse-menu li a{
+            font-weight: 400;
+        }
+
+    .close {
+        font-size: 78px;
+        line-height: 78px;
+        color: #DDD;
+        text-shadow: none;
+    }
+        .close:hover{
+            color: #FFF;
+            opacity: 1;
+        }
+
+    header p{
+        color: #666;
+        font-weight: 400;
+        font-size: .8em;
+    }
+        header a:hover{
+            text-decoration: none;
+        }
+
+    label{
+        font-weight: 700;
+    }
+
+    #search-modal input{
+        font-size: 1.5em;
+        line-height: 40px;
+    }
+
+    .button,
+    .button:hover,
+    .button:focus,
+    .button:active{
+        font-size: 1.25em;
+        font-weight: 300;
+        color: #FFF !important;
+        text-decoration: none;
+    }
+
+    .card .button{
+        font-size: .9em;
+    }
+
+    .card ul li a{
+        font-size: .9em;
+    }
+        .card a:hover{
+            text-decoration: underline;
+        }
+        .card a.button:hover{
+            text-decoration: none;
+        }
+
+    .card p{
+            font-size: .8em;
+        }
+
+    .recent-item{
+        font-size: .8em;
+    }
+
+    footer{
+        font-size: .8em;
+    }
+    
+    .small{
+        font-size: .9em;
+    }
+
+
+/*  Buttons =======================================*/
+
+    .button{
+        cursor: pointer;
+        margin: 14px 0 0 15px;
+        padding: 10px 45px 11px;
+        background-color: #00a88e;
+        box-shadow: 6px 6px 0px #FFF;
+    }
+        .button:hover{
+            background-color: #009880;
+        }
+        .button:focus{
+            background-color: #009880;
+            outline: none;
+        }
+        .button:active{
+            position: relative;
+            top: 6px;
+            left: 6px;
+            box-shadow: none;
+        }
+
+    .card .button{
+        margin-top: 70px;
+        display: block;
+        text-align: center;
+        padding: 7px 10px 8px;
+    }
+
+
+/* Containers ========================================*/
+
+
+    header .wrapper{
+        padding-left: 0;
+        padding-right: 14px;
+    }
+
+    #news{
+        margin: 100px 0 0 0;
+    }
+        #news .wrapper{
+            width: 100%;
+            max-width: 1200px;
+        }
+
+    #cards{
+        margin: 60px 0 30px 0;
+    }
+
+    #items{
+        background-color: #222;
+        padding: 30px 0 30px 0;
+    }
+
+    #social{
+        padding-bottom: 60px;
+        border-bottom: 1px solid #e8dcca;
+    }
+
+    .wrapper{
+        max-width: 1200px;
+        padding: 0 15px 0 15px;
+        margin: 0 auto;
+    }
+
+       footer {
+        border-top: 1px solid #EEE;
+        background: #FFF;
+        overflow: hidden;
+    }
+
+
+/*  Navigation ================================*/
+
+    nav{
+        width: 100%;
+        height: 30px;
+        background-color: #FFF;
+        z-index: 1000;
+
+    }
+
+    nav ul{
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        display: inline;
+    }
+        nav li{
+            display: inline;
+        }
+        nav a{
+            text-decoration: none;
+            display: inline-block;
+            padding: 0 20px 0 20px;
+            line-height: 30px;
+        }
+        /*.js #no-drop-browse{
+            display: none;
+        }
+        .no-js #drop-browse{
+            display: none;
+        }*/
+        nav .first{
+            padding-left: 0;
+        }
+
+        .dropdown-toggle{
+            padding-right: 45px;
+            background: url(../img/arrow.png) 100px 27px no-repeat;
+            background-size: 10px 10px;
+        }
+
+        #sign-in a{
+            padding-right: 0;
+        }
+
+    #simple-menu{
+            display: none;
+    }
+        #simple-menu img{
+            margin-top: 10px;
+            height: 38px;
+            border: 1px solid #222;
+            padding: 10px 8px 10px 8px;
+            border-radius: 3px;
+            background: #333;
+            box-shadow: 1px 1px 0px #444 inset;
+        }
+
+    #browse-menu{
+        background: none;
+        position: absolute;
+        top: 30px;
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        padding: 40px 20px 0 40px;
+        left: 280px;
+    }
+        #browse-menu li{
+            display: block;
+        }
+        #browse-menu .list-head{
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        #browse-menu a{
+            line-height: 2;
+        }
+
+    .close{
+        opacity: 1;
+        position: absolute;
+        right: 20px;
+        top: -35px;
+    }
+
+    /* Bootstrap fixes */
+    .modal-backdrop.fade.in{
+        opacity: .9;
+    }
+    .modal-header{
+        border: none;
+    }
+        
+
+/* Header ============================================*/
+
+    header {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        float: left;
+        background-image: url('../img/stripe.png');
+    }
+        header p{
+            margin-top: 10px;
+        }
+        h1{
+            display: inline;
+            vertical-align: top;
+            margin: 0;
+            background-color: #FFF;
+            padding: 20px 15px 0 15px;
+            box-shadow: 8px 8px 0px #FFF;
+        }
+
+        hgroup{
+            float: left;
+        }
+            
+        hgroup a:hover h1,
+        hgroup a:focus h1,
+        hgroup a:visited h1{
+            box-shadow: 8px 8px 0px #00a88e;
+        }
+        hgroup a:active h1{
+            box-shadow: none;
+            position: relative;
+            top: 8px;
+            left: 8px;
+        }    
+
+
+/* Search ============================================*/
+    
+    form{
+        text-align: right;
+        padding: 22px 0 0 0;
+    }
+       label{
+            display: block;
+            margin-bottom: 7px;
+            font-size: 1em;
+        }
+        #search-modal .modal-body{
+            padding: 0;
+        }
+        input[type=text]{
+            display: inline;
+            width: 85%;
+            height: 60px;
+            border: none;
+            padding: 10px 20px 10px 20px;
+            margin: 0;
+            float: left;
+        }
+            input[type=text]:focus{
+                outline: none;
+                border: none;
+                box-shadow: none;
+            }
+
+        input[type=submit]{
+            background: url("../img/search-white.svg") no-repeat center center;
+            background-size: 32px;
+            background-color: #00a88e;
+            text-indent: -9999px;
+            cursor: pointer;
+            border: none;
+            padding: 10px 42px;
+        }
+            input[type=submit]:hover,
+            input[type=submit]:focus{
+                outline: none;
+                background-color: #009880;
+            }
+
+        #search-modal{
+            width: 700px;
+            left: 45%;
+            top: 20%;
+        }
+
+/*  Announcements =================================*/
+
+    .no-js .bxslider{
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    .no-js .bxslider li{
+        display: inline;
+    }
+    .no-js .bxslider img{
+        width: 49%;
+    }
+
+    .bxslider li{
+        margin-right: 40px;
+        left: 40px;
+    }
+
+
+/*  Cards ==========================================*/
+
+    .card{
+        padding: 20px;
+        border: 1px solid #EEE
+    }
+
+    #cards .card h2{
+        margin-bottom: 15px;
+    }
+
+    .card ul{
+        list-style: none;
+        padding-left: 0;
+    }
+        .card ul li{
+            margin: 0 0 6px 0;
+        }
+
+    .card-container{
+        height: 280px;
+    }
+
+    #branches p span{
+        margin-right: 20px;
+    }
+        #branches .fwd-link{
+            display: inline-block;
+            width: 75px;
+        }
+
+    #info h3{
+
+    }
+
+    #info .fwd-link{
+        width: 93px;
+    }
+
+    .fwd-link{
+        display: inline-block;
+        background: url('../img/arrow-right2.svg') no-repeat center right;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+    }
+
+
+/*  Items ==========================================*/
+
+    #items #item-list{
+        list-style: none;
+    }
+
+    #items #item-list li{
+        display: inline;
+    }
+
+    .recent-item{
+        margin-top: 11px;
+    }
+        .recent-item h2{
+            margin-bottom: 21px;
+        }
+
+    .most.recent-item{
+        margin-top: 0;
+    }
+        .most.recent-item h2{
+            margin-bottom: 15px;
+        }
+
+
+    .recent-item img{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    #items .fwd-link{
+        margin-top: 15px;
+        width: 83px;
+    }
+
+/*  Footer ==========================================*/
+
+    footer ul,
+    footer p{
+        margin: 0;
+    }
+    footer ul{
+        padding: 40px 0 20px 0;
+    }
+        footer li{
+            margin-left: 30px;
+        }
+            footer li.first{
+                margin: 0;
+            }
+
+    footer p{
+        padding: 40px 0 40px 0;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+
+/*  Large screen = 980px to 1199px ===================*/
+
+    @media screen and (min-device-width: 980px) and (max-device-width: 1199px), screen and (min-width: 980px) and (max-width: 1199px)  {
+        .wrapper,
+        #news .wrapper,
+        .bx-wrapper{
+            width: 970px;
+        }
+        h1{
+            font-size: 2.5em;
+        }
+    }
+
+
+/*  Medium screen = 769px to 979px ==================*/
+
+    @media screen and (min-device-width: 769px) and (max-device-width: 979px), screen and (min-width: 769px) and (max-width: 979px) {
+        .wrapper{
+            width: 768px;
+        }
+        hgroup{
+            float: none;
+            text-align: center;
+        }
+        form{
+            text-align: center;
+        }
+        input[type=submit]{
+            padding: 10px 52px;
+        }
+        #search-modal{
+            left: 42%;
+        }
+        #news .wrapper{
+            padding: 0;
+        }
+        .bx-wrapper .bx-viewport{
+            border: none;
+            border-radius: 0;
+        }
+        h2{
+            font-size: 1.75em;
+        }
+        .span4{
+            width: 232px;
+        }
+        .span12{
+            width: 738px;
+        }
+        .search-container-outer{
+            width: 738px;
+            margin-top: 30px;
+        }
+        .card-container{
+            height: 355px;
+        }
+        #branches span.inline{
+            display: block !important;
+        }
+        #branches p span{
+            margin-right: 25px;
+        }
+    }
+
+
+/*  Small screen = 768px and under ==================*/
+
+    @media screen and (max-device-width: 768px), (max-width: 768px) {
+        .wrapper{
+             width: 100%;
+        }
+        hgroup{
+            float: none;
+            text-align: center;
+        }
+        form{
+            text-align: center;
+            margin: 10px 0 30px 0;
+        }
+        #news .wrapper{
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 10px;
+            border: none;
+        }
+        .bx-wrapper .bx-viewport{
+            border: none;
+            border-radius: 0;
+        }
+
+        #simple-menu{
+            display: inline;
+        }
+
+        h2{
+            font-size: 2em;
+        }
+
+        nav{
+            height: 60px;
+        }
+
+        nav ul{
+            display: none;
+        }
+
+        nav a{
+            padding: 0;
+        }
+
+        hgroup{
+            float: none !important;
+            text-align: center;
+            padding: 0 !important;
+        }
+        header p{
+            font-size: .75em;
+        }
+        header img{
+            display: none;
+        }
+
+        form{
+            width: 100%;
+        }
+            form input[type=text]{
+                width: 80%;
+                font-size: 1.25em;
+            }
+            form input[type=submit]{
+                background-size: 80px;
+                background-position: 0px 5px;
+                width: 30px;
+                height: 50px;
+            }
+                form input[type=submit]:hover,
+                form input[type=submit]:focus{
+                background-size: 80px;
+                background-position: -45px 5px;
+                width: 30px;
+                height: 50px;
+            }
+        .search-container-outer{
+            width: 100%;
+            margin-top: 30px;
+        }
+        .search-container-inner{
+            height: 50px;
+        }
+        #search-modal{
+            left: 0;
+            width: 100%;
+        }
+        form input[type=submit],
+        form input[type=submit]:hover{
+            height: 60px;
+            background-size: 40px;
+            background-position: 14px 10px;
+            padding: 10px 35px
+        }
+        .bx-wrapper .bx-viewport{
+            border: none;
+        }
+            .bx-controls-auto{
+                display: none;
+            }
+            .bx-pager{
+                display: none;
+            }
+            .no-js .bxslider li{
+                display: block;
+            }
+            .no-js .bxslider img{
+                width: 100%;
+            }
+        .card{
+            margin-bottom: 30px;
+            text-align: center;
+        }
+            .card-container{
+                height: 100%;
+            }
+            .card p,
+            .card li{
+                font-size: 1.25em;
+            }
+            .card ul li{
+                margin-bottom: 15px;
+            }
+            .card .button{
+                font-size: 1.3em;
+                padding-top: 14px;
+                padding-bottom: 15px;
+            }
+                .card .button:active{
+                    padding-top: 15px;
+                    padding-bottom: 14px;
+                }
+        #info .fwd-link{
+            width: 115px;
+            margin-top: 25px;
+        }
+        #branches span.left{
+                float: none !important;
+        }
+        #branches .fwd-link{
+            width: 96px;
+            margin-top: 25px;
+        }
+        #social ul{
+            display: block;
+            text-align: center;
+            clear: both;
+            float: none !important;
+            margin-top: 20px;
+        }
+            #social ul li{
+                margin-right: 10px;
+            }
+            #social h2{
+                float: none !important;
+                text-align: center;
+            }
+            #social img{
+                height: 34px;
+            }
+
+        #items{
+            text-align: center;
+        }
+        #items .recent-item img{
+            max-width: 200px;
+        }
+        #items .fwd-link{
+            width: 105px;
+        }
+        
+        footer ul,
+        footer p{
+            float: none !important;
+            text-align: center;
+        }
+        footer #address{
+            padding-bottom: 0;
+        }
+        footer ul{
+            padding-bottom: 40px;
+        }
+    } /* close media query */
+
+
+/*  Extra-small screen fix = 632px and under ================*/
+
+    @media (max-device-width: 632px), (max-width: 632px) {
+
+        h1{
+            font-size: 2em;
+        }     
+    }
+
+
+/*  Helper classes ==================================*/
+
+    .inline{
+        display: inline;
+    }
+
+    .right{
+        float: right;
+    }
+
+    .left{
+        float: left;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block !important; }
+
+    .visually-hide {
+        border: 0;
+        clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px; }
+

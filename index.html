@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Boston Public Library</title>
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/bxslider.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+
+<!-- modernizr -->
+<script src="js/modernizr.custom.53857.js"></script>
+
+</head>
+<body>
+	<nav role="navigation">
+        <div class="wrapper">
+            <a href="#sidr" id="simple-menu"><img src="img/drawer.png" alt="menu" /></a>
+            <a href="#" class="right" id="login">Log in</a>
+            <div id="sidr">
+        		<ul>
+        			<li>
+                        <a href="#" class="first">Visit</a>
+        			</li>
+                    <li>
+                        <a href="#">Research</a>
+                    </li>
+                    <li>
+                        <a href="#">Information Desk</a>
+                    </li>
+                    <li>
+                        <a href="#">Calendar & News</a>
+                    </li>
+                    <li>
+                        <a href="#">Parents & Kids</a>
+                    </li>
+        		</ul>
+            </div>
+            
+        </div>
+	</nav>
+
+	<header role="banner">
+        <div class="wrapper">
+            <hgroup>
+                <a href="#">
+            		<h1>Boston Public Library</h1>
+                </a>
+            </hgroup>
+
+            <form>
+                <a href="#browse-menu" class="button" role="button" data-toggle="modal" id="browse">Browse</a>
+                <a href="#search-modal" class="button" role="button" data-toggle="modal">Search</a>
+
+                <div class="modal hide fade" id="search-modal">
+                    <label for="search" class="visually-hide">Search catalog</label>
+                    <div class="modal-body">
+                            <input type="text" name="search" role="search" placeholder="Search the catalog">
+                            <input type="submit" class="search-button">
+                    </div>
+                </div>
+            </form>
+        </div>
+	</header>
+
+    <section>
+            <div id="browse-menu" class="modal hide fade">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-body">
+                    <div class="row-fluid">
+                        <ul class="span3">
+                            <li class="list-head">All Media</li>
+                            <li><a href="#">Books</a></li>
+                            <li><a href="#">Newspapers</a></li>
+                            <li><a href="#">Magazines</a></li>
+                            <li><a href="#">Journals</a></li>
+                            <li><a href="#">eBooks</a></li>
+                            <li><a href="#">Audiobooks</a></li>
+                            <li><a href="#">Music</a></li>
+                            <li><a href="#">Movies</a></li>
+                            <li><a href="#">Television</a></li>
+                        </ul>
+                        <ul class="span2">
+                            <li class="list-head">Read</li>
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Popular</a></li>
+                            <li><a href="#">Teens</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Classics</a></li>
+                            <li><a href="#">Mystery</a></li>
+                            <li><a href="#">Fantasy</a></li>
+                            <li><a href="#">Romance</a></li>
+                            <li><a href="#">Sci-fi</a></li>
+                        </ul>
+                        <ul class="span2">
+                            <li class="list-head">Listen</li>
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Trending</a></li>
+                            <li><a href="#">Audiobooks</a></li>
+                            <li><a href="#">Classical</a></li>
+                            <li><a href="#">Hip Hop</a></li>
+                            <li><a href="#">Jazz</a></li>
+                            <li><a href="#">Local</a></li>
+                            <li><a href="#">Pop Rock</a></li>
+                        </ul>
+                        <ul class="span2">
+                            <li class="list-head">Watch</li>
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Popular DVD</a></li>
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Animated</a></li>
+                            <li><a href="#">Comedy</a></li>
+                            <li><a href="#">Drama</a></li>
+                            <li><a href="#">Foreign Films</a></li>
+                            <li><a href="#">Horror</a></li>
+                            <li><a href="#">Television</a></li>
+                        </ul>
+                        <ul class="span2">
+                            <li class="list-head">Download</li>
+                            <li><a href="#">New</a></li>
+                            <li><a href="#">Magazines</a></li>
+                            <li><a href="#">Audiobooks</a></li>
+                            <li><a href="#">BPL Concerts</a></li>
+                            <li><a href="#">Free Music</a></li>
+                        </ul>
+                    </div>
+                </div><!-- close modal body -->
+            </div><!-- close browse menu -->
+    </section>
+
+    <main role="main">
+    	<section id="news" role="region" aria-label="Announcements">
+            <div class="wrapper">
+    			<h2 class="visually-hide">Announcements</h2>
+                <ul class="bxslider">
+                    <li>
+                        <a href="#"><img src="img/bg1.jpg" alt="sign up for architectural tours of the McKim building"/></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/bg8.jpg" alt="event description"/></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/bg10.jpg" alt="Author talk with nancy thayer november 26 at 6 pm"/></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/bg9.jpg" alt="event description"/></a>
+                    </li>
+                </ul>
+    	    </div>
+        </section>
+
+        
+    	<section id="cards">
+            <div class="wrapper">
+                <div class="row">
+
+                    <div class="span8 card" id="info">
+                        <div class="card-container" role="region" aria-label="Information desk">
+                            <h2>Information Desk</h2>
+                            <div class="row-fluid">
+                                <div class="span4">
+                                    <h3>Library services</h3>
+                                    <ul>
+                                        <li><a href="#">Reserve a museum/tour pass</a></li>
+                                        <li><a href="#">Library events</a></li>
+                                        <li><a href="#">Homework help</a></li>
+                                        <li><a href="#">ESOL</a></li>
+                                        <li><a href="#">Free wireless</a></li>
+                                        <li><a href="#">Book a private event</a></li>
+                                    </ul>
+                                </div>
+                                <div class="span4">
+                                    <h3>Account</h3>
+                                    <ul>
+                                        <li><a href="#">Get a library card</a></li>
+                                        <li><a href="#">Get an eCard</a></li>
+                                        <li><a href="#">Get or change my PIN</a></li>
+                                        <li><a href="#">Self-check out mavchines</a></li>
+                                    </ul>
+                                </div>
+                                <div class="span4">
+                                    <h3>Getting stuff</h3>
+                                    <ul>
+                                        <li><a href="#">Request an item</a></li>
+                                        <li><a href="#">Download eBooks</a></li>
+                                        <li><a href="#">Interlibrary loan</a></li>
+                                        <li><a href="#">Research materials</a></li>
+                                        <li><a href="#">Alternate online catalog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="fwd-link">More help</a>
+                    </div> <!-- close card -->
+
+                    <div class="span4 card" id="branches">
+                        <div class="card-container" role="region" aria-label="Branches">
+                            <h2>We're open today until 9 p.m.</h2>
+                            <p>
+                                <strong>Central Branch</strong></br>
+                                700 Boylston St, Boston MA 02116
+                                <a href="#" class="map"> map</a></br></br>
+                                <span class="inline left">
+                                    Monday&ndash;Thursday</br>
+                                    9 a.m.&ndash;9 p.m.</br></br>
+                                </span>
+                                <span class="inline">
+                                    Friday&ndash;Saturday</br>
+                                    9 a.m.&ndash;5 p.m.</br></br>
+                                </span>
+                                    Closed Sundays</br>
+                                    (June&ndash;September)
+                                </span>
+                            </p>
+                        </div>
+                        <a href="#" class="fwd-link">Visit us</a>
+                    </div> <!-- close card -->
+
+                </div>
+
+            </div> <!-- close wrapper -->
+    	</section> <!-- close cards -->
+
+        <section id="items">
+            <div class="wrapper">
+                <h2 class="visually-hide">Your items</h2>
+                <div class="row-fluid">
+                    <ul id="item-list">
+
+                        <div class="span2 most recent-item">
+                            <li>
+                                <h2 class="false-head due-date">Due in 2 days</h2>
+                                <a href="#">
+                                    <img src="img/js-book.png" alt="item title">
+                                </a>
+                            </li>
+                        </div>
+
+                        <div class="span2 recent-item">
+                            <li>
+                                <h2 class="due-date">Due in 4 days</h2>
+                                <a href="#">
+                                    <img src="img/potter-book.png" alt="item title">
+                                </a>
+                            </li>
+                        </div>
+
+                        <div class="span2 recent-item">
+                            <li>
+                                <h2 class="due-date">Due in 4 days</h2>
+                                <a href="#">
+                                    <img src="img/50-book.png" alt="item title">
+                                </a>
+                            </li>
+                        </div>
+
+                         <div class="span2 recent-item">
+                            <li>
+                                <h2 class="due-date">Due in 2 weeks</h2>
+                                <a href="#">
+                                    <img src="img/human-book.png" alt="item title">
+                                </a>
+                            </li>
+                        </div>
+
+                         <div class="span2 recent-item">
+                            <li>
+                                <h2 class="due-date">Due in 2 weeks</h2>
+                                <a href="#">
+                                    <img src="img/web-book.png" alt="item title">
+                                </a>
+                            </li>
+                        </div>
+
+                         <div class="span2 recent-item">
+                            <li>
+                                <h2 class="due-date">Due in 2 weeks</h2>
+                                <a href="#">
+                                    <img src="img/stores-book.png" alt="item title">
+                                </a>
+                            </li>
+                        </div>
+
+                    </ul>
+                </div>
+                <a href="#" class="fwd-link">All items</a>
+            </div> <!-- close wrapper -->
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="wrapper">
+            <p class="left" id="address">
+                Boston Public Library</br>
+                617-536-5400</br>
+                700 Boylston St., Boston MA 02116
+            </p>
+            <ul class="right">
+                <li class="inline first">
+                    <a href="#">About</a>
+                </li>
+                <li class="inline">
+                    <a href="#">Press</a>
+                </li>
+                <li class="inline">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="inline">
+                    <a href="#">Jobs</a>
+                </li>
+                <li class="inline">
+                    <a href="#">Donate</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+<script>
+    Modernizr.load([
+        { // always load jquery, bxslider, and bootstrap
+            load: ['http://code.jquery.com/jquery-1.10.1.min.js',
+                'http://code.jquery.com/jquery-migrate-1.2.1.min.js',
+                'js/bootstrap.js',
+                'js/bxslider.js'
+            ]
+        },
+        {
+            test: Modernizr.mq('(max-device-width: 768px), (max-width: 768px)'),
+            yep : ['css/jquery.sidr.dark.css', 
+                'js/sidr.min.js'],
+            // nope: 'js/dropdown.init.js'
+        }
+    ]);
+</script>
+
+</html>
